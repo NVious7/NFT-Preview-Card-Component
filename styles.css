@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+  background-color: hsl(217deg, 54%, 11%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-size: 18px;
+}
+
+.card {
+  background-color: hsl(216deg, 50%, 16%);
+  width: 325px;
+  margin: 25px;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.image-container {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+.image-container img:first-of-type {
+  width: 100%;
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.image-container:hover .overlay {
+  opacity: 0.5;
+  cursor: pointer;
+  display: block;
+}
+.image-container:hover .img-hover {
+  transition: 0.5s ease;
+  opacity: 1;
+  cursor: pointer;
+  display: block;
+}
+
+.overlay {
+  transition: 0.5s ease;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: hsl(178deg, 100%, 50%);
+  border-radius: 10px;
+}
+
+.img-hover {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: none;
+  opacity: 0.2;
+}
+
+p {
+  color: hsl(215deg, 51%, 70%);
+}
+
+.text-container h1 {
+  margin: 0;
+}
+.text-container h1 a {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.4rem;
+  letter-spacing: 0.015em;
+  text-decoration: none;
+}
+.text-container h1 a:hover {
+  transition: 0.5s ease;
+  color: hsl(178deg, 100%, 50%);
+}
+.text-container p {
+  font-size: 1.1rem;
+  letter-spacing: 0.015em;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+.info .eth {
+  display: flex;
+  align-items: center;
+}
+.info .eth img {
+  margin-right: 0.5rem;
+}
+.info .eth p {
+  color: hsl(178deg, 100%, 50%);
+}
+.info .clock {
+  display: flex;
+  align-items: center;
+}
+.info .clock img {
+  margin-right: 0.5rem;
+}
+
+hr {
+  border: 1px solid hsl(215deg, 32%, 27%);
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+}
+.footer img {
+  border: 1px solid;
+  border-radius: 50%;
+  border-color: hsl(0deg, 0%, 100%);
+  width: 2rem;
+  height: auto;
+  margin-right: 2%;
+}
+.footer a {
+  color: hsl(0deg, 0%, 100%);
+  text-decoration: none;
+}
+.footer a:hover {
+  transition: 0.5s ease;
+  color: hsl(178deg, 100%, 50%);
+}/*# sourceMappingURL=styles.css.map */
